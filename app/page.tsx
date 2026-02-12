@@ -23,10 +23,12 @@ export default function Home() {
       <header className="mb-12 text-center">
         <h1 className="text-4xl md:text-5xl font-extrabold text-blue-700 mb-4">Discretta Comércio e Distribuidora LTDA</h1>
         <p className="text-lg md:text-xl text-gray-700 mb-2">Venda total da empresa | M&A Teaser</p>
-        <p className="text-md text-gray-500 mb-6">Lingerie, Moda Praia e Sex Shop | Marca própria, fabricação própria, operação multicanal</p>
+        <p className="text-md text-gray-500 mb-6">Lingerie, Moda Praia e Sex Shop | Marca própria, fabricação própria, importação de produtos exclusivos com intermediador, operação multicanal</p>
         <div className="max-w-2xl mx-auto text-gray-800 text-base md:text-lg mb-8">
           <span className="font-semibold text-blue-700">Teaser de Aquisição</span> – Discretta Comércio e Distribuidora LTDA<br />
-          Fundada em 2018 por Eliene Alves, a Discretta é referência nacional em lingerie, moda praia e sex shop, com marca própria, fabricação verticalizada, operação multicanal e modelo white label/D2C para marcas e artistas.<br />
+          Fundada em 2018 por Eliene Alves, a Discretta é referência nacional em lingerie, moda praia e sex shop, com marca própria, fabricação, operação multicanal e modelo white label/D2C para marcas e artistas.<br />
+          <span className="block mt-4 text-green-700 font-semibold">Diferencial: Produtos únicos exclusivos no Brasil, sem concorrência no Brasil, portfólio completo de lingeries, moda praia e sex shop, com diferenciais únicos e fabricação própria.</span>
+          <span className="block mt-2 text-green-700 font-semibold"> Fornecimento e fabricação para artista com mais de 10 milhões de seguidores, incluindo gestão e operação do e-commerce próprio da artista, com produtos da marca Discretta.</span>
           <span className="block mt-2 text-blue-700 font-medium">Oportunidade premium para investidores e grupos estratégicos.</span>
         </div>
       </header>
@@ -43,7 +45,7 @@ export default function Home() {
               <div className="flex flex-col gap-6">
                 <div className="flex flex-col items-center">
                   <span className="text-3xl font-bold text-green-600 mb-1">R$ 2.190.527,43</span>
-                  <span className="text-sm text-gray-500">Faturamento anual</span>
+                  <span className="text-sm text-gray-500">Faturamento 2025</span>
                 </div>
                 <div className="flex flex-col items-center">
                   <span className="text-2xl font-bold text-green-600 mb-1">R$ 101.000</span>
@@ -163,6 +165,11 @@ export default function Home() {
       </section>
 
       <section id="parceria" className="mb-16">
+        <div className="max-w-3xl mx-auto bg-white rounded-xl shadow-md p-8 mb-8">
+          <h2 className="text-2xl font-bold text-green-700 mb-4">Diferencial</h2>
+          <div className="text-green-700 text-base font-semibold mb-2">Produtos únicos exclusivos no Brasil, sem concorrência, portfólio completo de lingeries, moda praia e sex shop, com diferenciais e fabricação própria.</div>
+          <div className="text-green-700 text-base">Fornecimento e fabricação para artista com mais de 10 milhões de seguidores, incluindo gestão e operação do e-commerce próprio da artista, com produtos da marca Discretta.</div>
+        </div>
         <div className="max-w-3xl mx-auto bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-2xl font-bold text-blue-700 mb-4">Parceria Estratégica</h2>
           <ul className="list-disc pl-5 text-gray-700 text-base">
