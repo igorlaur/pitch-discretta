@@ -26,8 +26,10 @@ export default function Home() {
         <p className="text-md text-gray-500 mb-6">Lingerie, Moda Praia e Sex Shop | Marca própria, fabricação própria, importação de produtos exclusivos com intermediador, operação multicanal</p>
         <div className="max-w-2xl mx-auto text-gray-800 text-base md:text-lg mb-8">
           <span className="font-semibold text-blue-700">Teaser de Aquisição</span> – Discretta Comércio e Distribuidora LTDA<br />
-          Fundada em 2018 por Eliene Alves, a Discretta é referência nacional em lingerie, moda praia e sex shop, com marca própria, fabricação, operação multicanal e modelo white label/D2C para marcas e artistas.<br />
-          <span className="block mt-4 text-green-700 font-semibold">Diferencial: Produtos únicos exclusivos no Brasil, sem concorrência no Brasil, portfólio completo de lingeries, moda praia e sex shop, com diferenciais únicos e fabricação própria.</span>
+          Fundada em 2018 por Eliene Alves, a Discretta é referência nacional em lingerie, moda praia e sex shop, com marca própria, fabricação, operação multicanal e modelo D2C para marcas e artistas.<br />
+          <span className="block mt-4 text-green-700 font-semibold">
+            Diferencial: <span className="bg-yellow-200 px-1 rounded font-bold">Produtos únicos exclusivos no Brasil, sem concorrência</span>, com diferenciais únicos, importação de produtos exclusivos com intermediador e fabricação própria.
+          </span>
           <span className="block mt-2 text-green-700 font-semibold"> Fornecimento e fabricação para artista com mais de 10 milhões de seguidores, incluindo gestão e operação do e-commerce próprio da artista, com produtos da marca Discretta.</span>
           <span className="block mt-2 text-blue-700 font-medium">Oportunidade premium para investidores e grupos estratégicos.</span>
         </div>
@@ -43,10 +45,14 @@ export default function Home() {
           <div className="w-full lg:w-2/3 grid grid-cols-1 md:grid-cols-2 gap-8">
             <Card title="Números do Negócio">
               <div className="flex flex-col gap-6">
-                <div className="flex flex-col items-center">
-                  <span className="text-3xl font-bold text-green-600 mb-1">R$ 2.190.527,43</span>
-                  <span className="text-sm text-gray-500">Faturamento 2025</span>
-                </div>
+                <h3 className="text-xl font-bold text-green-700 text-center mb-2">Faturamento</h3>
+                <SimpleBarChart
+                  data={[
+                    { label: "2023", value: 881320.24, color: "#38bdf8" },
+                    { label: "2024", value: 1921783.03, color: "#0ea5e9" },
+                    { label: "2025", value: 2190527.43, color: "#22c55e" },
+                  ]}
+                />
                 <div className="flex flex-col items-center">
                   <span className="text-2xl font-bold text-green-600 mb-1">R$ 101.000</span>
                   <span className="text-sm text-gray-500">Lucro líquido (sem pró-labore)</span>
@@ -96,14 +102,9 @@ export default function Home() {
 
       <section id="parceria" className="mb-16">
         <div className="max-w-3xl mx-auto bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-2xl font-bold text-green-700 mb-4">Diferencial</h2>
-          <div className="text-green-700 text-base font-semibold mb-2">Produtos únicos exclusivos no Brasil, sem concorrência, portfólio completo de lingeries, moda praia e sex shop, com diferenciais e fabricação própria.</div>
-          <div className="text-green-700 text-base">Fornecimento e fabricação para artista com mais de 10 milhões de seguidores, incluindo gestão e operação do e-commerce próprio da artista, com produtos da marca Discretta.</div>
-        </div>
-        <div className="max-w-3xl mx-auto bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-2xl font-bold text-blue-700 mb-4">Parceria Estratégica</h2>
           <ul className="list-disc pl-5 text-gray-700 text-base">
-            <li>Fabricação sob demanda para artista famosa (white label / D2C)</li>
+            <li>Fabricação sob demanda para artista famosa (D2C)</li>
             <li>Próximo passo: gestão completa do e-commerce da artista</li>
             <li>Posicionamento: plataforma de produto + operação para marcas pessoais e creators</li>
           </ul>
@@ -114,7 +115,7 @@ export default function Home() {
         <div className="max-w-3xl mx-auto bg-white rounded-xl shadow-md p-8 mb-8">
           <h2 className="text-2xl font-bold text-blue-700 mb-4">Roadmap</h2>
           <ul className="list-disc pl-5 text-gray-700 text-base">
-            <li>Curto prazo: gestão do site da artista, consolidação do modelo white label</li>
+            <li>Curto prazo: gestão do site da artista, consolidação do modelo D2C</li>
             <li>Curto/médio prazo: entrada no 99Mercados</li>
             <li>Médio prazo: importação direta da China, redução de custos e aumento de margem</li>
           </ul>
@@ -131,6 +132,9 @@ export default function Home() {
             <li>Logística: Mercado Livre FULL + FLEX, Correios/transportadoras, Motoboy (Uber/99)</li>
             <li>Capacidade de transição: sim</li>
           </ul>
+          <div className="text-base text-gray-700 mb-4">
+            Também oferecemos um <span className="font-semibold text-blue-700">portal do colaborador</span> para visualização de sistema de ponto, holerite e funções individuais. Cada função possui um <span className="font-semibold text-blue-700">manual em PDF</span> próprio para consulta. Utilizamos metodologias ágeis na empresa, com sistema <span className="font-semibold text-blue-700">Kanban puxado</span>, reuniões de retrospectiva, dailies e cadastro de tarefas no Trello e Clickup, entre outros recursos para gestão eficiente e transparente.
+          </div>
           <h2 className="text-xl font-bold text-blue-700 mb-2">Liderança Estratégica</h2>
           <div className="space-y-4">
             <div>
@@ -152,7 +156,7 @@ export default function Home() {
         <div className="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-2">
           {/* Mercado Livre */}
           <div className="bg-white rounded-xl shadow-md p-6 flex flex-col items-center w-full min-w-[220px] max-w-md mx-auto text-center">
-            <a href="https://www.mercadolivre.com.br/profile/DISCRETTA" target="_blank" rel="noopener" className="bg-yellow-400 text-gray-900 px-6 py-2 rounded-lg font-bold shadow hover:bg-yellow-500 transition text-lg flex items-center gap-2">
+            <a href="https://www.mercadolivre.com.br/loja/discretta?item_id=MLB3712169960&category_id=MLB270337&official_store_id=274910&client=recoview-selleritems&recos_listing=true#origin=vip&component=sellerData&typeSeller=official_store" target="_blank" rel="noopener" className="bg-yellow-400 text-gray-900 px-6 py-2 rounded-lg font-bold shadow hover:bg-yellow-500 transition text-lg flex items-center gap-2">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><ellipse cx="12" cy="12" rx="12" ry="12" fill="#FFE600"/><path d="M7.5 12.5C8.5 13.5 10.5 15 12 15C13.5 15 15.5 13.5 16.5 12.5" stroke="#222" strokeWidth="1.5" strokeLinecap="round"/><path d="M7.5 12.5C8.5 11.5 10.5 10 12 10C13.5 10 15.5 11.5 16.5 12.5" stroke="#222" strokeWidth="1.5" strokeLinecap="round"/></svg>
               Mercado Livre
             </a>
@@ -168,13 +172,13 @@ export default function Home() {
               Shopee
             </a>
             <div className="mt-4 text-center text-gray-700 text-base">
-              Loja com forte presença, reputação alta, produtos exclusivos e atendimento ágil.
+              Loja com forte presença, gerente de contas pessoal até 2027, reputação alta, produtos exclusivos, atendimento ágil.
             </div>
           </div>
 
           {/* Shein */}
           <div className="bg-white rounded-xl shadow-md p-6 flex flex-col items-center w-full min-w-[220px] max-w-md mx-auto text-center">
-            <a href="https://shein.com.br/shop/discretta" target="_blank" rel="noopener" className="bg-pink-500 text-white px-6 py-2 rounded-lg font-bold shadow hover:bg-pink-600 transition text-lg flex items-center gap-2">
+            <a href="https://br.shein.com/store/home?ici=PageGoodsDetail&main_cate_id=4297&main_goods_id=30724556&page_from=PageGoodsDetail&rule_poskey=DetailShopItemList&src_identifier=on%3Dstore%60cn%3DDiscretta%60hz%3D0%60ps%3D1_1%60jc%3DthirdPartyStoreHome_5439998882&src_module=DetailBrand&src_tab_page_id=page_goods_detail1770925515994&store_code=5439998882&tab=items" target="_blank" rel="noopener" className="bg-black text-white px-6 py-2 rounded-lg font-bold shadow hover:bg-gray-900 transition text-lg flex items-center gap-2">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="24" height="24" rx="12" fill="#EC4899"/><text x="12" y="16" textAnchor="middle" fontSize="12" fill="#fff">SH</text></svg>
               Shein
             </a>
@@ -196,10 +200,16 @@ export default function Home() {
 
           {/* Instagram */}
           <div className="bg-white rounded-xl shadow-md p-6 flex flex-col items-center w-full min-w-[220px] max-w-md mx-auto text-center">
-            <a href="https://instagram.com/discretta" target="_blank" rel="noopener" className="bg-gradient-to-r from-pink-500 via-purple-500 to-yellow-500 text-white px-6 py-2 rounded-lg font-bold shadow hover:opacity-90 transition text-lg flex items-center gap-2">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="24" height="24" rx="12" fill="url(#ig-gradient)"/><defs><linearGradient id="ig-gradient" x1="0" y1="0" x2="24" y2="24" gradientUnits="userSpaceOnUse"><stop stopColor="#EC4899"/><stop offset="0.5" stopColor="#A21CAF"/><stop offset="1" stopColor="#FACC15"/></linearGradient></defs><text x="12" y="16" textAnchor="middle" fontSize="12" fill="#fff">IG</text></svg>
-              Instagram
-            </a>
+            <div className="flex flex-col items-center w-full">
+              <a href="https://instagram.com/discretta.lingerie" target="_blank" rel="noopener" className="bg-gradient-to-r from-pink-500 via-purple-500 to-yellow-500 text-white px-6 py-2 rounded-lg font-bold shadow hover:opacity-90 transition text-lg flex items-center gap-2 mb-2">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="24" height="24" rx="12" fill="url(#ig-gradient)"/><defs><linearGradient id="ig-gradient" x1="0" y1="0" x2="24" y2="24" gradientUnits="userSpaceOnUse"><stop stopColor="#EC4899"/><stop offset="0.5" stopColor="#A21CAF"/><stop offset="1" stopColor="#FACC15"/></linearGradient></defs><text x="12" y="16" textAnchor="middle" fontSize="12" fill="#fff">IG</text></svg>
+                @discretta.lingerie
+              </a>
+              <a href="https://instagram.com/discretta.sexshop" target="_blank" rel="noopener" className="bg-gradient-to-r from-pink-500 via-purple-500 to-yellow-500 text-white px-6 py-2 rounded-lg font-bold shadow hover:opacity-90 transition text-lg flex items-center gap-2">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="24" height="24" rx="12" fill="url(#ig-gradient)"/><defs><linearGradient id="ig-gradient" x1="0" y1="0" x2="24" y2="24" gradientUnits="userSpaceOnUse"><stop stopColor="#EC4899"/><stop offset="0.5" stopColor="#A21CAF"/><stop offset="1" stopColor="#FACC15"/></linearGradient></defs><text x="12" y="16" textAnchor="middle" fontSize="12" fill="#fff">IG</text></svg>
+                @discretta.sexshop
+              </a>
+            </div>
             <div className="mt-4 text-center text-gray-700 text-base">
               Canal de branding, engajamento e divulgação de produtos exclusivos.
             </div>
@@ -207,12 +217,12 @@ export default function Home() {
 
           {/* Google Maps (Loja Física) */}
           <div className="bg-white rounded-xl shadow-md p-6 flex flex-col items-center w-full min-w-[220px] max-w-full text-center">
-            <a href="https://goo.gl/maps/2QwQwQwQwQwQwQwQ6" target="_blank" rel="noopener" className="bg-gray-700 text-white px-6 py-2 rounded-lg font-bold shadow hover:bg-gray-900 transition text-lg flex items-center gap-2">
+            <a href="https://share.google/llTGTLxrvvjP2z44a" target="_blank" rel="noopener" className="bg-gray-700 text-white px-6 py-2 rounded-lg font-bold shadow hover:bg-gray-900 transition text-lg flex items-center gap-2">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="24" height="24" rx="12" fill="#374151"/><text x="12" y="16" textAnchor="middle" fontSize="12" fill="#fff">MAPS</text></svg>
               Loja Física
             </a>
             <div className="mt-4 text-center text-gray-700 text-base">
-              Endereço: Rua Exemplo, 123, São Paulo/SP<br/>Ponto estratégico, atendimento presencial, estoque e operação.
+              Endereço: Av. Corifeu de Azevedo Marques, 929 - Butantã<br/>Ponto estratégico, atendimento presencial, estoque e operação.
             </div>
           </div>
         </div>
