@@ -21,17 +21,17 @@ export default function Home() {
   return (
     <main className="max-w-5xl mx-auto py-12 px-4 md:px-8">
       <header className="mb-12 text-center">
-        <h1 className="text-4xl md:text-5xl font-extrabold text-blue-700 mb-4">Discretta Comércio e Distribuidora LTDA</h1>
+        <h1 className="text-4xl md:text-5xl font-extrabold text-pink-700 mb-4">Discretta Comércio e Distribuidora LTDA</h1>
         <p className="text-lg md:text-xl text-gray-700 mb-2">Venda total da empresa | M&A Teaser</p>
         <p className="text-md text-gray-500 mb-6">Lingerie, Moda Praia e Sex Shop | Marca própria, fabricação própria, importação de produtos exclusivos com intermediador, operação multicanal</p>
         <div className="max-w-2xl mx-auto text-gray-800 text-base md:text-lg mb-8">
-          <span className="font-semibold text-blue-700">Teaser de Aquisição</span> – Discretta Comércio e Distribuidora LTDA<br />
+          <span className="font-semibold text-pink-700">Teaser de Aquisição</span> – Discretta Comércio e Distribuidora LTDA<br />
           Fundada em 2018 por Eliene Alves, a Discretta é referência nacional em lingerie, moda praia e sex shop, com marca própria, fabricação, operação multicanal e modelo D2C para marcas e artistas.<br />
           <span className="block mt-4 text-green-700 font-semibold">
             Diferencial: <span className="bg-yellow-200 px-1 rounded font-bold">Produtos únicos exclusivos no Brasil, sem concorrência</span>, com diferenciais únicos, importação de produtos exclusivos com intermediador e fabricação própria.
           </span>
           <span className="block mt-2 text-green-700 font-semibold"> Fornecimento e fabricação para artista com mais de 10 milhões de seguidores, incluindo gestão e operação do e-commerce próprio da artista, com produtos da marca Discretta.</span>
-          <span className="block mt-2 text-blue-700 font-medium">Oportunidade premium para investidores e grupos estratégicos.</span>
+          <span className="block mt-2 text-pink-700 font-medium">Oportunidade premium para investidores e grupos estratégicos.</span>
         </div>
       </header>
 
@@ -45,7 +45,7 @@ export default function Home() {
           <div className="w-full lg:w-2/3 grid grid-cols-1 md:grid-cols-2 gap-8">
             <Card title="Números do Negócio">
               <div className="flex flex-col gap-6">
-                <h3 className="text-xl font-bold text-green-700 text-center mb-2">Faturamento</h3>
+                <h3 className="text-xl font-bold text-pink-700 text-center mb-2">Faturamento</h3>
                 <SimpleBarChart
                   data={[
                     { label: "2023", value: 881320.24, color: "#38bdf8" },
@@ -63,11 +63,11 @@ export default function Home() {
                 </div>
                 <div className="flex flex-row justify-center gap-8">
                   <div className="flex flex-col items-center">
-                    <span className="text-xl font-bold text-blue-600 mb-1">4,2%</span>
+                    <span className="text-xl font-bold text-pink-600 mb-1">4,2%</span>
                     <span className="text-sm text-gray-500">Margem líquida</span>
                   </div>
                   <div className="flex flex-col items-center">
-                    <span className="text-xl font-bold text-blue-600 mb-1">3.000</span>
+                    <span className="text-xl font-bold text-pink-600 mb-1">3.000</span>
                     <span className="text-sm text-gray-500">SKUs ativos</span>
                   </div>
                 </div>
@@ -102,7 +102,7 @@ export default function Home() {
 
       <section id="parceria" className="mb-16">
         <div className="max-w-3xl mx-auto bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-2xl font-bold text-blue-700 mb-4">Parceria Estratégica</h2>
+          <h2 className="text-2xl font-bold text-pink-700 mb-4">Parceria Estratégica</h2>
           <ul className="list-disc pl-5 text-gray-700 text-base">
             <li>Fabricação sob demanda para artista famosa (D2C)</li>
             <li>Próximo passo: gestão completa do e-commerce da artista</li>
@@ -113,7 +113,7 @@ export default function Home() {
 
       <section id="roadmap" className="mb-16">
         <div className="max-w-3xl mx-auto bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-2xl font-bold text-blue-700 mb-4">Roadmap</h2>
+          <h2 className="text-2xl font-bold text-pink-700 mb-4">Roadmap</h2>
           <ul className="list-disc pl-5 text-gray-700 text-base">
             <li>Curto prazo: gestão do site da artista, consolidação do modelo D2C</li>
             <li>Curto/médio prazo: entrada no 99Mercados</li>
@@ -124,7 +124,7 @@ export default function Home() {
 
       <section id="lideranca" className="mb-16">
         <div className="max-w-3xl mx-auto bg-white rounded-xl shadow-md p-8 mb-8">
-          <h2 className="text-2xl font-bold text-blue-700 mb-4">Operação</h2>
+          <h2 className="text-2xl font-bold text-pink-700 mb-4">Operação</h2>
           <ul className="list-disc pl-5 text-gray-700 text-base mb-6">
             <li>3 colaboradores (expedição, vendas, e-commerce)</li>
             <li>ERP: Bling</li>
@@ -133,9 +133,9 @@ export default function Home() {
             <li>Capacidade de transição: sim</li>
           </ul>
           <div className="text-base text-gray-700 mb-4">
-            Também oferecemos um <span className="font-semibold text-blue-700">portal do colaborador</span> para visualização de sistema de ponto, holerite e funções individuais. Cada função possui um <span className="font-semibold text-blue-700">manual em PDF</span> próprio para consulta. Utilizamos metodologias ágeis na empresa, com sistema <span className="font-semibold text-blue-700">Kanban puxado</span>, reuniões de retrospectiva, dailies e cadastro de tarefas no Trello e Clickup, entre outros recursos para gestão eficiente e transparente.
+            Também oferecemos um <span className="font-semibold text-pink-700">portal do colaborador</span> para visualização de sistema de ponto, holerite e funções individuais. Cada função possui um <span className="font-semibold text-pink-700">manual em PDF</span> próprio para consulta. Utilizamos metodologias ágeis na empresa, com sistema <span className="font-semibold text-pink-700">Kanban puxado</span>, reuniões de retrospectiva, dailies e cadastro de tarefas no Trello e Clickup, entre outros recursos para gestão eficiente e transparente.
           </div>
-          <h2 className="text-xl font-bold text-blue-700 mb-2">Liderança Estratégica</h2>
+          <h2 className="text-xl font-bold text-pink-700 mb-2">Liderança Estratégica</h2>
           <div className="space-y-4">
             <div>
               <span className="font-semibold text-gray-900">Eliene Alves</span>
@@ -229,12 +229,12 @@ export default function Home() {
       </section>
 
       <section id="contato" className="mt-12 flex flex-col items-center">
-        <div className="bg-blue-700 text-white rounded-xl px-8 py-6 text-center shadow-lg max-w-xl w-full">
+        <div className="bg-pink-700 text-white rounded-xl px-8 py-6 text-center shadow-lg max-w-xl w-full">
           <h2 className="text-2xl font-bold mb-2">Interessado em negociar?</h2>
           <p className="mb-4 text-md">Entre em contato para conversa e negociação. Oportunidade única para investidores e compradores estratégicos.</p>
           <a
             href="mailto:igor@discretta.com.br?subject=Interesse%20na%20compra%20da%20Discretta"
-            className="inline-block bg-white text-blue-700 font-semibold px-6 py-2 rounded-lg shadow hover:bg-blue-50 transition"
+            className="inline-block bg-white text-pink-700 font-semibold px-6 py-2 rounded-lg shadow hover:bg-pink-50 transition"
           >
             Conversar sobre aquisição
           </a>
