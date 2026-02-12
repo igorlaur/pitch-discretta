@@ -93,76 +93,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-      {/* Área separada para apresentação dos canais */}
-      <section className="mt-12 mb-16">
-        <div className="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-2">
-          {/* Mercado Livre */}
-            <div className="bg-white rounded-xl shadow-md p-6 flex flex-col items-center w-full min-w-[220px] max-w-md mx-auto text-center">
-            <a href="https://www.mercadolivre.com.br/profile/DISCRETTA" target="_blank" rel="noopener" className="bg-yellow-400 text-gray-900 px-6 py-2 rounded-lg font-bold shadow hover:bg-yellow-500 transition text-lg flex items-center gap-2">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><ellipse cx="12" cy="12" rx="12" ry="12" fill="#FFE600"/><path d="M7.5 12.5C8.5 13.5 10.5 15 12 15C13.5 15 15.5 13.5 16.5 12.5" stroke="#222" strokeWidth="1.5" strokeLinecap="round"/><path d="M7.5 12.5C8.5 11.5 10.5 10 12 10C13.5 10 15.5 11.5 16.5 12.5" stroke="#222" strokeWidth="1.5" strokeLinecap="round"/></svg>
-              Mercado Livre
-            </a>
-            <div className="mt-4 text-center text-gray-700 text-base">
-              Loja FULL + FLEX, destaque nacional no segmento, reputação máxima, operação multicanal e logística avançada.
-            </div>
-          </div>
-
-          {/* Shopee */}
-            <div className="bg-white rounded-xl shadow-md p-6 flex flex-col items-center w-full min-w-[220px] max-w-md mx-auto text-center">
-            <a href="https://shopee.com.br/discretta" target="_blank" rel="noopener" className="bg-orange-500 text-white px-6 py-2 rounded-lg font-bold shadow hover:bg-orange-600 transition text-lg flex items-center gap-2">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="24" height="24" rx="12" fill="#FF5722"/><text x="12" y="16" textAnchor="middle" fontSize="12" fill="#fff">S</text></svg>
-              Shopee
-            </a>
-            <div className="mt-4 text-center text-gray-700 text-base">
-              Loja com forte presença, reputação alta, produtos exclusivos e atendimento ágil.
-            </div>
-          </div>
-
-          {/* Shein */}
-            <div className="bg-white rounded-xl shadow-md p-6 flex flex-col items-center w-full min-w-[220px] max-w-md mx-auto text-center">
-            <a href="https://shein.com.br/shop/discretta" target="_blank" rel="noopener" className="bg-pink-500 text-white px-6 py-2 rounded-lg font-bold shadow hover:bg-pink-600 transition text-lg flex items-center gap-2">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="24" height="24" rx="12" fill="#EC4899"/><text x="12" y="16" textAnchor="middle" fontSize="12" fill="#fff">SH</text></svg>
-              Shein
-            </a>
-            <div className="mt-4 text-center text-gray-700 text-base">
-              Loja em expansão, produtos diferenciados, potencial de crescimento e integração com marcas.
-            </div>
-          </div>
-
-          {/* Site Próprio */}
-            <div className="bg-white rounded-xl shadow-md p-6 flex flex-col items-center w-full min-w-[220px] max-w-md mx-auto text-center">
-            <a href="https://discretta.com.br" target="_blank" rel="noopener" className="bg-green-600 text-white px-6 py-2 rounded-lg font-bold shadow hover:bg-green-700 transition text-lg flex items-center gap-2">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="24" height="24" rx="12" fill="#22C55E"/><text x="12" y="16" textAnchor="middle" fontSize="12" fill="#fff">SP</text></svg>
-              Site Próprio
-            </a>
-            <div className="mt-4 text-center text-gray-700 text-base">
-              Plataforma própria, controle total de portfólio, experiência premium e integração multicanal.
-            </div>
-          </div>
-
-          {/* Instagram */}
-            <div className="bg-white rounded-xl shadow-md p-6 flex flex-col items-center w-full min-w-[220px] max-w-md mx-auto text-center">
-            <a href="https://instagram.com/discretta" target="_blank" rel="noopener" className="bg-gradient-to-r from-pink-500 via-purple-500 to-yellow-500 text-white px-6 py-2 rounded-lg font-bold shadow hover:opacity-90 transition text-lg flex items-center gap-2">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="24" height="24" rx="12" fill="url(#ig-gradient)"/><defs><linearGradient id="ig-gradient" x1="0" y1="0" x2="24" y2="24" gradientUnits="userSpaceOnUse"><stop stopColor="#EC4899"/><stop offset="0.5" stopColor="#A21CAF"/><stop offset="1" stopColor="#FACC15"/></linearGradient></defs><text x="12" y="16" textAnchor="middle" fontSize="12" fill="#fff">IG</text></svg>
-              Instagram
-            </a>
-            <div className="mt-4 text-center text-gray-700 text-base">
-              Canal de branding, engajamento e divulgação de produtos exclusivos.
-            </div>
-          </div>
-
-          {/* Google Maps (Loja Física) */}
-            <div className="bg-white rounded-xl shadow-md p-6 flex flex-col items-center w-full min-w-[220px] max-w-full text-center">
-            <a href="https://goo.gl/maps/2QwQwQwQwQwQwQwQ6" target="_blank" rel="noopener" className="bg-gray-700 text-white px-6 py-2 rounded-lg font-bold shadow hover:bg-gray-900 transition text-lg flex items-center gap-2">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="24" height="24" rx="12" fill="#374151"/><text x="12" y="16" textAnchor="middle" fontSize="12" fill="#fff">MAPS</text></svg>
-              Loja Física
-            </a>
-            <div className="mt-4 text-center text-gray-700 text-base">
-              Endereço: Rua Exemplo, 123, São Paulo/SP<br/>Ponto estratégico, atendimento presencial, estoque e operação.
-            </div>
-          </div>
-        </div>
-      </section>
 
       <section id="parceria" className="mb-16">
         <div className="max-w-3xl mx-auto bg-white rounded-xl shadow-md p-8 mb-8">
@@ -211,7 +141,79 @@ export default function Home() {
               <span className="font-semibold text-gray-900">Igor Laur</span>
               <div className="text-base text-gray-700">Gestor estratégico | Especialista em inovação, tecnologia e agilidade | Estruturação de marketplaces e aceleração de e-commerce</div>
             </div>
-            <div className="mt-4 text-center text-xs text-gray-400">[Imagem de produtos exclusivos – substituir]</div>
+            <div className="mt-4 text-center text-xs text-gray-400"></div>
+          </div>
+        </div>
+      </section>
+
+      {/* Canais de venda - agora após Operação/Liderança */}
+
+      <section className="mt-12 mb-16">
+        <div className="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-2">
+          {/* Mercado Livre */}
+          <div className="bg-white rounded-xl shadow-md p-6 flex flex-col items-center w-full min-w-[220px] max-w-md mx-auto text-center">
+            <a href="https://www.mercadolivre.com.br/profile/DISCRETTA" target="_blank" rel="noopener" className="bg-yellow-400 text-gray-900 px-6 py-2 rounded-lg font-bold shadow hover:bg-yellow-500 transition text-lg flex items-center gap-2">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><ellipse cx="12" cy="12" rx="12" ry="12" fill="#FFE600"/><path d="M7.5 12.5C8.5 13.5 10.5 15 12 15C13.5 15 15.5 13.5 16.5 12.5" stroke="#222" strokeWidth="1.5" strokeLinecap="round"/><path d="M7.5 12.5C8.5 11.5 10.5 10 12 10C13.5 10 15.5 11.5 16.5 12.5" stroke="#222" strokeWidth="1.5" strokeLinecap="round"/></svg>
+              Mercado Livre
+            </a>
+            <div className="mt-4 text-center text-gray-700 text-base">
+              Loja FULL + FLEX, destaque nacional no segmento, reputação máxima, operação multicanal e logística avançada.
+            </div>
+          </div>
+
+          {/* Shopee */}
+          <div className="bg-white rounded-xl shadow-md p-6 flex flex-col items-center w-full min-w-[220px] max-w-md mx-auto text-center">
+            <a href="https://shopee.com.br/discretta" target="_blank" rel="noopener" className="bg-orange-500 text-white px-6 py-2 rounded-lg font-bold shadow hover:bg-orange-600 transition text-lg flex items-center gap-2">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="24" height="24" rx="12" fill="#FF5722"/><text x="12" y="16" textAnchor="middle" fontSize="12" fill="#fff">S</text></svg>
+              Shopee
+            </a>
+            <div className="mt-4 text-center text-gray-700 text-base">
+              Loja com forte presença, reputação alta, produtos exclusivos e atendimento ágil.
+            </div>
+          </div>
+
+          {/* Shein */}
+          <div className="bg-white rounded-xl shadow-md p-6 flex flex-col items-center w-full min-w-[220px] max-w-md mx-auto text-center">
+            <a href="https://shein.com.br/shop/discretta" target="_blank" rel="noopener" className="bg-pink-500 text-white px-6 py-2 rounded-lg font-bold shadow hover:bg-pink-600 transition text-lg flex items-center gap-2">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="24" height="24" rx="12" fill="#EC4899"/><text x="12" y="16" textAnchor="middle" fontSize="12" fill="#fff">SH</text></svg>
+              Shein
+            </a>
+            <div className="mt-4 text-center text-gray-700 text-base">
+              Loja em expansão, produtos diferenciados, potencial de crescimento e integração com marcas.
+            </div>
+          </div>
+
+          {/* Site Próprio */}
+          <div className="bg-white rounded-xl shadow-md p-6 flex flex-col items-center w-full min-w-[220px] max-w-md mx-auto text-center">
+            <a href="https://discretta.com.br" target="_blank" rel="noopener" className="bg-green-600 text-white px-6 py-2 rounded-lg font-bold shadow hover:bg-green-700 transition text-lg flex items-center gap-2">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="24" height="24" rx="12" fill="#22C55E"/><text x="12" y="16" textAnchor="middle" fontSize="12" fill="#fff">SP</text></svg>
+              Site Próprio
+            </a>
+            <div className="mt-4 text-center text-gray-700 text-base">
+              Plataforma própria, controle total de portfólio, experiência premium e integração multicanal.
+            </div>
+          </div>
+
+          {/* Instagram */}
+          <div className="bg-white rounded-xl shadow-md p-6 flex flex-col items-center w-full min-w-[220px] max-w-md mx-auto text-center">
+            <a href="https://instagram.com/discretta" target="_blank" rel="noopener" className="bg-gradient-to-r from-pink-500 via-purple-500 to-yellow-500 text-white px-6 py-2 rounded-lg font-bold shadow hover:opacity-90 transition text-lg flex items-center gap-2">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="24" height="24" rx="12" fill="url(#ig-gradient)"/><defs><linearGradient id="ig-gradient" x1="0" y1="0" x2="24" y2="24" gradientUnits="userSpaceOnUse"><stop stopColor="#EC4899"/><stop offset="0.5" stopColor="#A21CAF"/><stop offset="1" stopColor="#FACC15"/></linearGradient></defs><text x="12" y="16" textAnchor="middle" fontSize="12" fill="#fff">IG</text></svg>
+              Instagram
+            </a>
+            <div className="mt-4 text-center text-gray-700 text-base">
+              Canal de branding, engajamento e divulgação de produtos exclusivos.
+            </div>
+          </div>
+
+          {/* Google Maps (Loja Física) */}
+          <div className="bg-white rounded-xl shadow-md p-6 flex flex-col items-center w-full min-w-[220px] max-w-full text-center">
+            <a href="https://goo.gl/maps/2QwQwQwQwQwQwQwQ6" target="_blank" rel="noopener" className="bg-gray-700 text-white px-6 py-2 rounded-lg font-bold shadow hover:bg-gray-900 transition text-lg flex items-center gap-2">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="24" height="24" rx="12" fill="#374151"/><text x="12" y="16" textAnchor="middle" fontSize="12" fill="#fff">MAPS</text></svg>
+              Loja Física
+            </a>
+            <div className="mt-4 text-center text-gray-700 text-base">
+              Endereço: Rua Exemplo, 123, São Paulo/SP<br/>Ponto estratégico, atendimento presencial, estoque e operação.
+            </div>
           </div>
         </div>
       </section>
