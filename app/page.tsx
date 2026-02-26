@@ -4,17 +4,16 @@ import BigNumber from "./components/BigNumber";
 import SimpleBarChart from "./components/SimpleBarChart";
 
 const channels = [
-  { label: "Mercado Livre (FULL + FLEX)", value: 1392731.79, color: "#3b82f6" },
-  { label: "Shopee", value: 297919.27, color: "#6366f1" },
-  { label: "Shein", value: 150892.00, color: "#0ea5e9" },
-  { label: "Loja Física", value: 109798.63, color: "#f59e42" },
-  { label: "Site próprio", value: 100768.18, color: "#10b981" },
-  { label: "WhatsApp + Manual", value: 75249.72, color: "#f43f5e" },
-  { label: "Magalu", value: 32240.62, color: "#a21caf" },
-  { label: "Kwai", value: 13150.85, color: "#f472b6" },
-  { label: "Rappi", value: 12551.87, color: "#f87171" },
-  { label: "iFood Mercado", value: 4363.70, color: "#facc15" },
-  { label: "Vila Madalena", value: 860.80, color: "#d1d5db" },
+  { label: "Mercado Livre (FULL + normal)\n63,7%", value: 1392731.79, color: "#eeff00" },
+  { label: "Shopee\n6,9%", value: 150892.00, color: "#f79400" },
+  { label: "Loja Física\n5,0%", value: 109798.63, color: "#ff009d" },
+  { label: "Site próprio (Live Ecommerce)\n4,6%", value: 100768.18, color: "#ff009d" },
+  { label: "WhatsApp + Pedido manual\n3,4%", value: 75249.72, color: "#ff009d" },
+  { label: "Magalu\n1,5%", value: 32240.62, color: "#00aeff" },
+  { label: "Kwai\n0,6%", value: 13150.85, color: "#f472b6" },
+  { label: "Rappi\n0,6%", value: 12551.87, color: "#f87171" },
+  { label: "iFood Mercado\n0,2%", value: 4363.70, color: "#facc15" },
+  { label: "Vila Madalena – Beco do Batman\n0,04%", value: 860.80, color: "#d1d5db" },
 ];
 
 export default function Home() {
@@ -53,6 +52,16 @@ export default function Home() {
                     { label: "2025", value: 2190527.43, color: "#22c55e" },
                   ]}
                 />
+                <div className="text-center mb-2">
+                  <span className="inline-block bg-gray-100 text-gray-700 text-sm font-semibold px-3 py-1 rounded">Dados referentes a 2025</span>
+                </div>
+                <div className="flex flex-col items-center">
+                  <span className="text-lg font-semibold text-blue-700 mb-1">Reinvestimos R$ 35.000</span>
+                  <span className="text-sm text-gray-500">Valor reinvestido na operação</span>
+                  <span className="text-xs text-gray-500 mt-2 block">
+                    O reinvestimento foi destinado à compra de notebooks para colaboradores e gestores, monitores, suportes, mesas de trabalho, impressoras, fachada da loja para melhorar o visual e marketing, manequins, insufilm para vitrine, iluminação, móveis, entre outros itens para modernização e estruturação da operação.
+                  </span>
+                </div>
                 <div className="flex flex-col items-center">
                   <span className="text-2xl font-bold text-green-600 mb-1">R$ 101.000</span>
                   <span className="text-sm text-gray-500">Lucro líquido (sem pró-labore)</span>
